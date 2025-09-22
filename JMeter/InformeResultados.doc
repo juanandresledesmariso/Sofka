@@ -4,7 +4,7 @@ El análisis de los resultados, tanto del cuadro resumen (textSummary.txt) como 
 
 Rendimiento Estable: La prueba se ejecutó con éxito, con una tasa de error del 3%, lo que es aceptable. El tiempo promedio de respuesta fue de 861.68ms, lo que indica que el servicio de login respondió de manera consistente y eficiente bajo la carga de prueba.
 
-Punto de Quiebre: El diagrama de monitoreo (image_b72c40.png) muestra una caída significativa en el número de peticiones por segundo (http_reqs) alrededor de la marca de tiempo 01:50:00. Esta caída coincide con un momento en el que la carga de usuarios virtuales (vus) se mantuvo alta. Este es un hallazgo crítico, ya que indica un punto de quiebre o saturación del servicio, donde el sistema deja de responder de manera eficiente.
+Punto de Quiebre: El diagrama de monitoreo muestra una caída significativa en el número de peticiones por segundo (http_reqs) alrededor de la marca de tiempo 01:50:00. Esta caída coincide con un momento en el que la carga de usuarios virtuales (vus) se mantuvo alta. Este es un hallazgo crítico, ya que indica un punto de quiebre o saturación del servicio, donde el sistema deja de responder de manera eficiente.
 
 Impacto de los Usuarios: Se observa una relación directa entre el número de usuarios virtuales y la cantidad de peticiones por segundo. La línea de vus se mantiene alta, pero la línea de http_reqs (la que representa el rendimiento real del servicio) presenta caídas. Esto sugiere que el sistema podría estar sufriendo un cuello de botella o una limitación en el servidor al intentar manejar la concurrencia.
 
